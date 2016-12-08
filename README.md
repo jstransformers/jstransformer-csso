@@ -16,8 +16,8 @@
 ```js
 var csso = require('jstransformer')(require('jstransformer-csso'));
 
-csso.render('blah').body
-//=> 'blah'
+csso.render('.foo { color: #ff0000; } .bar { color: rgba(255, 0, 0, 1); }').body
+//=> '.bar,.foo{color:red}'
 ```
 
 ## License
