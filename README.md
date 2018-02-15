@@ -15,7 +15,7 @@
 ## API
 
 ```js
-var csso = require('jstransformer')(require('jstransformer-csso'));
+var csso = require('jstransformer')(require('jstransformer-csso'))
 
 csso.render('.csso { color: #ff0000; } .bar { color: rgba(255, 0, 0, 1); }').body
 //=> '.bar,.csso{color:red}'
